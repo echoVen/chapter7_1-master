@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>出库管理</title>
+</head>
+<body>
+<div class="form-group row">
+					<label for="ID" class="col-md-3 col-form-label">物品编号：</label>
+					<div class="col-md-9">
+						<input type="text" class="form-control" id="ID"
+							placeholder="请输入物品编号"  th:field="*{ID}">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="name" class="col-md-3 col-form-label">物品名称：</label>
+					<div class="col-md-9">
+						<input type="password" class="form-control" id="userPassword"
+							placeholder="请输入物品名称"  th:field="*{name}">
+					</div>
+				</div>
+				    <a th:href="@{/hquer/submit}">提交</a>
+
+</body>
+</html>

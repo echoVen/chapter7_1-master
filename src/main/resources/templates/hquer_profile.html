@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link
+	href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	rel="stylesheet">
+
+<title>用户信息</title>
+</head>
+<body>
+<div class="container col-md-12">
+   <table class="table">
+   <thead>
+    <tr><td colspan="2">用户信息</td></tr>
+   </thead>
+   <tr><td>身份：</td><td th:text="${hquer.userIdentity}">身份</td></tr>
+   <tr><td>用户名：</td><td th:text="${hquer.userName}">用户名</td></tr>
+   <tr><td>密码:</td><td th:text="${hquer.userPassword}">Password</td></tr>
+    <tr><td>电话:</td><td th:text="${hquer.userPhone}">电话</td></tr>
+   </table>
+   <a th:href="@{/hquer/login}">重新登陆</a>
+</div>
+</body>
+</html>
